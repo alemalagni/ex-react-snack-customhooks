@@ -1,6 +1,13 @@
+import useSwitch from "../components/useSwitch";
+
 function Snack1() {
+    const [isOn, toggle] = useSwitch();
+
     return (
-        <h2>Snack1</h2>
+        <div>
+            <h1>Il valore è: {isOn ? "ON" : "OFF"}</h1>
+            <button onClick={toggle}>Cambia Stato</button>
+        </div>
     )
 }
 
