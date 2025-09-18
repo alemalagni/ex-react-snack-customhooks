@@ -15,6 +15,19 @@ function useCustomPointer(emoji) {
         };
     }, []);
 
+    return (
+        <div
+            style={{
+                position: 'absolute',
+                top: mousePosition.y,
+                left: mousePosition.x,
+                transform: 'translate(-50%, -50%)',
+                pointerEvents: 'none',
+                fontSize: '2rem',
+            }}
+        >
+            {emoji}
+        </div>);
 
 }
 
