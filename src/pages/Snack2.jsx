@@ -1,6 +1,13 @@
+import useDate from "../components/useDate";
+
 function Snack2() {
+    const currentDate = useDate();
+
     return (
-        <h2>Snack2</h2>
+        <div>
+            <h2>Data e ora attuali:</h2>
+            <h3>{currentDate.toLocaleString()}</h3>
+        </div>
     )
 }
 
